@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A03FCEB2A658CEB00CF330A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCEA2A658CEB00CF330A /* Character.swift */; };
+		8A03FCEE2A664F8D00CF330A /* MarvelApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCED2A664F8D00CF330A /* MarvelApiClient.swift */; };
+		8A03FCF12A664FAA00CF330A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF02A664FAA00CF330A /* Constants.swift */; };
+		8A03FCF32A66516800CF330A /* ComicRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF22A66516800CF330A /* ComicRowView.swift */; };
+		8A03FCF52A66519F00CF330A /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF42A66519F00CF330A /* Comic.swift */; };
 		8AFE1A812A61F92D00527DCA /* platzy_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A802A61F92D00527DCA /* platzy_challengeApp.swift */; };
 		8AFE1A832A61F92D00527DCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A822A61F92D00527DCA /* ContentView.swift */; };
 		8AFE1A852A61F92F00527DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFE1A842A61F92F00527DCA /* Assets.xcassets */; };
@@ -14,6 +19,7 @@
 		8AFE1A922A61F92F00527DCA /* platzy_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A912A61F92F00527DCA /* platzy_challengeTests.swift */; };
 		8AFE1A9C2A61F92F00527DCA /* platzy_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A9B2A61F92F00527DCA /* platzy_challengeUITests.swift */; };
 		8AFE1A9E2A61F92F00527DCA /* platzy_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A9D2A61F92F00527DCA /* platzy_challengeUITestsLaunchTests.swift */; };
+		8AFE1AAD2A6233E300527DCA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1AAC2A6233E300527DCA /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A03FCEA2A658CEB00CF330A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		8A03FCED2A664F8D00CF330A /* MarvelApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelApiClient.swift; sourceTree = "<group>"; };
+		8A03FCF02A664FAA00CF330A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A03FCF22A66516800CF330A /* ComicRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRowView.swift; sourceTree = "<group>"; };
+		8A03FCF42A66519F00CF330A /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		8A03FCF62A66614200CF330A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8AFE1A7D2A61F92D00527DCA /* platzy-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "platzy-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFE1A802A61F92D00527DCA /* platzy_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzy_challengeApp.swift; sourceTree = "<group>"; };
 		8AFE1A822A61F92D00527DCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +56,7 @@
 		8AFE1A972A61F92F00527DCA /* platzy-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "platzy-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFE1A9B2A61F92F00527DCA /* platzy_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzy_challengeUITests.swift; sourceTree = "<group>"; };
 		8AFE1A9D2A61F92F00527DCA /* platzy_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzy_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AFE1AAC2A6233E300527DCA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A03FCEC2A664BEF00CF330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCEA2A658CEB00CF330A /* Character.swift */,
+				8A03FCED2A664F8D00CF330A /* MarvelApiClient.swift */,
+				8A03FCF42A66519F00CF330A /* Comic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A03FCEF2A664F9F00CF330A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCF02A664FAA00CF330A /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8AFE1A742A61F92D00527DCA = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +125,12 @@
 		8AFE1A7F2A61F92D00527DCA /* platzy-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				8A03FCF62A66614200CF330A /* Info.plist */,
+				8A03FCEF2A664F9F00CF330A /* Utils */,
+				8A03FCEC2A664BEF00CF330A /* Model */,
+				8AFE1AAB2A6233D500527DCA /* ViewModel */,
+				8AFE1AAA2A62271E00527DCA /* Views */,
 				8AFE1A802A61F92D00527DCA /* platzy_challengeApp.swift */,
-				8AFE1A822A61F92D00527DCA /* ContentView.swift */,
 				8AFE1A842A61F92F00527DCA /* Assets.xcassets */,
 				8AFE1A862A61F92F00527DCA /* Preview Content */,
 			);
@@ -125,6 +160,23 @@
 				8AFE1A9D2A61F92F00527DCA /* platzy_challengeUITestsLaunchTests.swift */,
 			);
 			path = "platzy-challengeUITests";
+			sourceTree = "<group>";
+		};
+		8AFE1AAA2A62271E00527DCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AFE1A822A61F92D00527DCA /* ContentView.swift */,
+				8A03FCF22A66516800CF330A /* ComicRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AFE1AAB2A6233D500527DCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8AFE1AAC2A6233E300527DCA /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AFE1A832A61F92D00527DCA /* ContentView.swift in Sources */,
+				8A03FCF52A66519F00CF330A /* Comic.swift in Sources */,
+				8A03FCF12A664FAA00CF330A /* Constants.swift in Sources */,
+				8AFE1AAD2A6233E300527DCA /* ViewModel.swift in Sources */,
+				8A03FCEE2A664F8D00CF330A /* MarvelApiClient.swift in Sources */,
 				8AFE1A812A61F92D00527DCA /* platzy_challengeApp.swift in Sources */,
+				8A03FCEB2A658CEB00CF330A /* Character.swift in Sources */,
+				8A03FCF32A66516800CF330A /* ComicRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +478,7 @@
 				DEVELOPMENT_TEAM = W6QLPMZAJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "platzy-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +508,7 @@
 				DEVELOPMENT_TEAM = W6QLPMZAJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "platzy-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

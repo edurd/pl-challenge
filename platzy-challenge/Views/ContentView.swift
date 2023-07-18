@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = ViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(viewModel.comics, id: \.id) { comic in
+            ComicRowView(comic: comic)
         }
-        .padding()
+        .onAppear {
+            Task {
+                await viewModel.getComics()
+            }
+        }
     }
 }
 
