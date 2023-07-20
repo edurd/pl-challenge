@@ -12,14 +12,24 @@
 		8A03FCF12A664FAA00CF330A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF02A664FAA00CF330A /* Constants.swift */; };
 		8A03FCF32A66516800CF330A /* ComicRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF22A66516800CF330A /* ComicRowView.swift */; };
 		8A03FCF52A66519F00CF330A /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF42A66519F00CF330A /* Comic.swift */; };
+		8ADC9E932A67421D004F8453 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADC9E922A67421D004F8453 /* Realm */; };
+		8ADC9E952A67421D004F8453 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADC9E942A67421D004F8453 /* RealmSwift */; };
+		8ADD23302A68A4D400ECB410 /* PexelsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */; };
+		8ADD23322A68A7E000ECB410 /* ComicDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23312A68A7E000ECB410 /* ComicDetailViewModel.swift */; };
+		8ADD23342A68D26900ECB410 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23332A68D26900ECB410 /* Video.swift */; };
+		8ADD23362A68D7E600ECB410 /* VideosContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23352A68D7E500ECB410 /* VideosContentView.swift */; };
+		8ADD23382A68D8AC00ECB410 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23372A68D8AC00ECB410 /* VideoViewModel.swift */; };
+		8ADD233A2A68D9F400ECB410 /* VideoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23392A68D9F400ECB410 /* VideoRowView.swift */; };
+		8ADD233C2A68E23000ECB410 /* VideoPlayerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD233B2A68E22F00ECB410 /* VideoPlayerContentView.swift */; };
 		8AFE1A812A61F92D00527DCA /* platzy_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A802A61F92D00527DCA /* platzy_challengeApp.swift */; };
-		8AFE1A832A61F92D00527DCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A822A61F92D00527DCA /* ContentView.swift */; };
+		8AFE1A832A61F92D00527DCA /* ComicsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A822A61F92D00527DCA /* ComicsContentView.swift */; };
 		8AFE1A852A61F92F00527DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFE1A842A61F92F00527DCA /* Assets.xcassets */; };
 		8AFE1A882A61F92F00527DCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFE1A872A61F92F00527DCA /* Preview Assets.xcassets */; };
 		8AFE1A922A61F92F00527DCA /* platzy_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A912A61F92F00527DCA /* platzy_challengeTests.swift */; };
 		8AFE1A9C2A61F92F00527DCA /* platzy_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A9B2A61F92F00527DCA /* platzy_challengeUITests.swift */; };
 		8AFE1A9E2A61F92F00527DCA /* platzy_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A9D2A61F92F00527DCA /* platzy_challengeUITestsLaunchTests.swift */; };
 		8AFE1AAD2A6233E300527DCA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1AAC2A6233E300527DCA /* ViewModel.swift */; };
+		8AFF5CCA2A67AAA1006E3419 /* ComicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF5CC92A67AAA1006E3419 /* ComicDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +56,16 @@
 		8A03FCF22A66516800CF330A /* ComicRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRowView.swift; sourceTree = "<group>"; };
 		8A03FCF42A66519F00CF330A /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		8A03FCF62A66614200CF330A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsApiClient.swift; sourceTree = "<group>"; };
+		8ADD23312A68A7E000ECB410 /* ComicDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailViewModel.swift; sourceTree = "<group>"; };
+		8ADD23332A68D26900ECB410 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		8ADD23352A68D7E500ECB410 /* VideosContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosContentView.swift; sourceTree = "<group>"; };
+		8ADD23372A68D8AC00ECB410 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		8ADD23392A68D9F400ECB410 /* VideoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRowView.swift; sourceTree = "<group>"; };
+		8ADD233B2A68E22F00ECB410 /* VideoPlayerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerContentView.swift; sourceTree = "<group>"; };
 		8AFE1A7D2A61F92D00527DCA /* platzy-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "platzy-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFE1A802A61F92D00527DCA /* platzy_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzy_challengeApp.swift; sourceTree = "<group>"; };
-		8AFE1A822A61F92D00527DCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8AFE1A822A61F92D00527DCA /* ComicsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsContentView.swift; sourceTree = "<group>"; };
 		8AFE1A842A61F92F00527DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AFE1A872A61F92F00527DCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8AFE1A8D2A61F92F00527DCA /* platzy-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "platzy-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +74,7 @@
 		8AFE1A9B2A61F92F00527DCA /* platzy_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzy_challengeUITests.swift; sourceTree = "<group>"; };
 		8AFE1A9D2A61F92F00527DCA /* platzy_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzy_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8AFE1AAC2A6233E300527DCA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8AFF5CC92A67AAA1006E3419 /* ComicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ADC9E952A67421D004F8453 /* RealmSwift in Frameworks */,
+				8ADC9E932A67421D004F8453 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				8A03FCEA2A658CEB00CF330A /* Character.swift */,
-				8A03FCED2A664F8D00CF330A /* MarvelApiClient.swift */,
 				8A03FCF42A66519F00CF330A /* Comic.swift */,
+				8ADD23332A68D26900ECB410 /* Video.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +120,15 @@
 				8A03FCF02A664FAA00CF330A /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		8ADC9E962A674629004F8453 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCED2A664F8D00CF330A /* MarvelApiClient.swift */,
+				8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */,
+			);
+			path = ApiClient;
 			sourceTree = "<group>";
 		};
 		8AFE1A742A61F92D00527DCA = {
@@ -126,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				8A03FCF62A66614200CF330A /* Info.plist */,
+				8ADC9E962A674629004F8453 /* ApiClient */,
 				8A03FCEF2A664F9F00CF330A /* Utils */,
 				8A03FCEC2A664BEF00CF330A /* Model */,
 				8AFE1AAB2A6233D500527DCA /* ViewModel */,
@@ -165,8 +195,12 @@
 		8AFE1AAA2A62271E00527DCA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8AFE1A822A61F92D00527DCA /* ContentView.swift */,
+				8AFE1A822A61F92D00527DCA /* ComicsContentView.swift */,
 				8A03FCF22A66516800CF330A /* ComicRowView.swift */,
+				8AFF5CC92A67AAA1006E3419 /* ComicDetailView.swift */,
+				8ADD23352A68D7E500ECB410 /* VideosContentView.swift */,
+				8ADD23392A68D9F400ECB410 /* VideoRowView.swift */,
+				8ADD233B2A68E22F00ECB410 /* VideoPlayerContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				8AFE1AAC2A6233E300527DCA /* ViewModel.swift */,
+				8ADD23312A68A7E000ECB410 /* ComicDetailViewModel.swift */,
+				8ADD23372A68D8AC00ECB410 /* VideoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,6 +231,10 @@
 			dependencies = (
 			);
 			name = "platzy-challenge";
+			packageProductDependencies = (
+				8ADC9E922A67421D004F8453 /* Realm */,
+				8ADC9E942A67421D004F8453 /* RealmSwift */,
+			);
 			productName = "platzy-challenge";
 			productReference = 8AFE1A7D2A61F92D00527DCA /* platzy-challenge.app */;
 			productType = "com.apple.product-type.application";
@@ -267,6 +307,9 @@
 				Base,
 			);
 			mainGroup = 8AFE1A742A61F92D00527DCA;
+			packageReferences = (
+				8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 8AFE1A7E2A61F92D00527DCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,14 +352,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFE1A832A61F92D00527DCA /* ContentView.swift in Sources */,
+				8AFE1A832A61F92D00527DCA /* ComicsContentView.swift in Sources */,
+				8ADD233C2A68E23000ECB410 /* VideoPlayerContentView.swift in Sources */,
+				8ADD23342A68D26900ECB410 /* Video.swift in Sources */,
 				8A03FCF52A66519F00CF330A /* Comic.swift in Sources */,
 				8A03FCF12A664FAA00CF330A /* Constants.swift in Sources */,
+				8ADD23382A68D8AC00ECB410 /* VideoViewModel.swift in Sources */,
 				8AFE1AAD2A6233E300527DCA /* ViewModel.swift in Sources */,
 				8A03FCEE2A664F8D00CF330A /* MarvelApiClient.swift in Sources */,
+				8ADD23362A68D7E600ECB410 /* VideosContentView.swift in Sources */,
 				8AFE1A812A61F92D00527DCA /* platzy_challengeApp.swift in Sources */,
 				8A03FCEB2A658CEB00CF330A /* Character.swift in Sources */,
 				8A03FCF32A66516800CF330A /* ComicRowView.swift in Sources */,
+				8ADD233A2A68D9F400ECB410 /* VideoRowView.swift in Sources */,
+				8ADD23302A68A4D400ECB410 /* PexelsApiClient.swift in Sources */,
+				8ADD23322A68A7E000ECB410 /* ComicDetailViewModel.swift in Sources */,
+				8AFF5CCA2A67AAA1006E3419 /* ComicDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +694,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.41.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8ADC9E922A67421D004F8453 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8ADC9E942A67421D004F8453 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AFE1A752A61F92D00527DCA /* Project object */;
 }

@@ -12,6 +12,7 @@ struct ComicResponse: Decodable {
     var status: String
     var data: ComicData
 }
+
 struct ComicData: Decodable {
     var offset: Int
     var limit: Int
@@ -19,6 +20,7 @@ struct ComicData: Decodable {
     var count: Int
     var results: [Comic]
 }
+
 struct Comic: Decodable {
     var id: Int
     var title: String
@@ -26,6 +28,7 @@ struct Comic: Decodable {
     var thumbnail: ComicThumbnail?
     
 }
+
 struct ComicThumbnail: Decodable, Equatable {
     var path: String?
     var ext: String?

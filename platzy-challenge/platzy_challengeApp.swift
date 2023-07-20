@@ -11,7 +11,7 @@ import SwiftUI
 struct platzy_challengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ComicsContentView()
         }
     }
 }
