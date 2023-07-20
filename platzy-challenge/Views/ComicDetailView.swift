@@ -35,7 +35,7 @@ struct ComicDetailView: View {
                 Text("What's about?")
                     .font(.subheadline)
                     .fontWeight(.bold)
-                Text(comic.description ?? "No description available")
+                Text(comic.comicDescription ?? "No description available")
                     .font(.subheadline)
                     .foregroundColor(Color.black)
                     .padding(EdgeInsets(top: 5, leading: 20, bottom: 20, trailing: 20))

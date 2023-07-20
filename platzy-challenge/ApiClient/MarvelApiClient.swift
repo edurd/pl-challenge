@@ -7,7 +7,11 @@
 
 import Foundation
 
-class MarvelApiClient {
+protocol MarvelApiClientProtocol {
+    func getComics(withLimit limit: Int, offset: Int) async throws -> [Comic]
+}
+
+class MarvelApiClient: MarvelApiClientProtocol {
     
     func getComics(withLimit limit: Int, offset: Int) async throws -> [Comic] {
         let paging = "&limit=\(limit)&offset=\(offset)"

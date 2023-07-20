@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ComicsContentView: View {
 
-    @StateObject var viewModel = ViewModel()
+    @StateObject var viewModel = ComicViewModel(client: MarvelApiClient())
     @State private var hasAppeared = false
 
     var body: some View {
@@ -21,6 +21,7 @@ struct ComicsContentView: View {
                             .onAppear {
                                 viewModel.reachedToLast(comic: comic)
                             }
+                            .accessibilityIdentifier("\(comic.id)")
                     }
                 }
             }

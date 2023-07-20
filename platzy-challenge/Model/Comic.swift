@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct ComicResponse: Decodable {
     var code: Int
@@ -21,21 +22,68 @@ struct ComicData: Decodable {
     var results: [Comic]
 }
 
-struct Comic: Decodable {
-    var id: Int
-    var title: String
-    var description: String?
-    var thumbnail: ComicThumbnail?
+class Comic: Object, Decodable {
+    @Persisted(primaryKey: true) var id: Int
+    @Persisted var title: String
+    @Persisted var comicDescription: String?
+    @Persisted var thumbnail: ComicThumbnail?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case comicDescription = "description"
+        case thumbnail
+    }
+
+    override init() {
+        super.init()
+    }
+
+    init(id: Int, title: String, description: String, thumbnail: ComicThumbnail) {
+        super.init()
+        self.id = id
+        self.title = title
+        self.comicDescription = description
+        self.thumbnail = thumbnail
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container: KeyedDecodingContainer<Comic.CodingKeys> = try decoder.container(keyedBy: Comic.CodingKeys.self)
+        
+        self._id = try container.decode(Persisted<Int>.self, forKey: Comic.CodingKeys.id)
+        self.title = try container.decode(String.self, forKey: Comic.CodingKeys.title)
+        self.comicDescription = try container.decodeIfPresent(String.self, forKey: Comic.CodingKeys.comicDescription)
+        self.thumbnail = try container.decodeIfPresent(ComicThumbnail.self, forKey: Comic.CodingKeys.thumbnail)
+    }
     
 }
 
-struct ComicThumbnail: Decodable, Equatable {
-    var path: String?
-    var ext: String?
+class ComicThumbnail: Object, Decodable {
+    @Persisted var path: String?
+    @Persisted var ext: String?
     
     enum CodingKeys: String, CodingKey {
         case path
         case ext = "extension"
+    }
+
+    override init() {
+        super.init()
+    }
+
+    init(path: String, ext: String) {
+        super.init()
+        self.path = path
+        self.ext = ext
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container: KeyedDecodingContainer<ComicThumbnail.CodingKeys> = try decoder.container(keyedBy: ComicThumbnail.CodingKeys.self)
+        
+        self.path = try container.decodeIfPresent(String.self, forKey: ComicThumbnail.CodingKeys.path)
+        self.ext = try container.decodeIfPresent(String.self, forKey: ComicThumbnail.CodingKeys.ext)
+        
+        
     }
     
 }

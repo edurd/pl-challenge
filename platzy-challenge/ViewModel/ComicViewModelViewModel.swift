@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  ComicViewModel.swift
 //  platzy-challenge
 //
 //  Created by Eduardo Hoyos Loli on 14/07/23.
@@ -7,17 +7,18 @@
 
 import Foundation
 
-class ViewModel: ObservableObject {
+class ComicViewModel: ObservableObject {
     
     @Published var comics = [Comic]()
-    var apiClient = MarvelApiClient()
+    var apiClient : MarvelApiClientProtocol
+    
+    init(client: MarvelApiClientProtocol) {
+        apiClient = client
+    }
+    
     var page = 0
     var offset = 0
     var limit = 50
-
-    func getCharacters() {
-
-    }
 
     @MainActor
     func getComics() async throws {

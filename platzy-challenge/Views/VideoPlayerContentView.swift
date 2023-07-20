@@ -23,6 +23,7 @@ struct VideoPlayerContentView: View {
             }
         }
         .background(Color.black)
+        .navigationBarTitleDisplayMode(.inline)
     }
         
 }

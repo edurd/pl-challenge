@@ -10,11 +10,16 @@ import Foundation
 class VideoViewModel: ObservableObject {
     @Published var videos = [Video]()
 
-    var apiClient = PexelsApiClient()
+    var apiClient: PexelsApiClientProtocol
+    
+    init(client: PexelsApiClientProtocol) {
+        apiClient = client
+    }
     
     @MainActor
     func getVideos(withQuery text: String) async throws {
-        let videosFromService = try await apiClient.getRandomVideos(withQuery: text)
+        let textEscaped = text.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? text
+        let videosFromService = try await apiClient.getRandomVideos(withQuery: textEscaped)
         videos = videosFromService
     }
 }

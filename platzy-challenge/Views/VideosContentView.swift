@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct VideosContentView: View {
-    @StateObject var viewModel = VideoViewModel()
-    @State private var name: String = ""
+    @StateObject var viewModel = VideoViewModel(client: PexelsApiClient())
+    @State private var query: String = ""
     @State var isLoading: Bool = false
 
     var body: some View {
         VStack {
             HStack{
-                TextField("Search for videos", text: $name)
+                TextField("Search for videos", text: $query)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button("Search") {
                     isLoading.toggle()
                     Task {
                         isLoading = true
-                        try await viewModel.getVideos(withQuery: name)
+                        try await viewModel.getVideos(withQuery: query)
                         isLoading = false
                     }
                 }
@@ -44,6 +44,7 @@ struct VideosContentView: View {
                 }
             }
         }
+        .navigationTitle("Video searcher")
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(Color.red, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)

@@ -7,7 +7,11 @@
 
 import Foundation
 
-class PexelsApiClient {
+protocol PexelsApiClientProtocol {
+    func getRandomVideos(withQuery text: String) async throws -> [Video]
+}
+
+class PexelsApiClient: PexelsApiClientProtocol {
     
     func getRandomVideos(withQuery text: String) async throws -> [Video] {
         guard let url = URL(string: Constants.getRandomVideos + text) else {
