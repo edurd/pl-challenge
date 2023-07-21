@@ -9,6 +9,8 @@ import SwiftUI
 import AVKit
 
 struct VideoPlayerContentView: View {
+    @EnvironmentObject var networkMonitor: NetworkMonitor
+    @State private var showNetworkAlert = false
     @State var link: String
     
     var body: some View {
@@ -24,8 +26,14 @@ struct VideoPlayerContentView: View {
         }
         .background(Color.black)
         .navigationBarTitleDisplayMode(.inline)
+        .onChange(of: networkMonitor.isConnected) { connection in
+            showNetworkAlert = connection == false
+        }
+        .alert(
+            "Network connection seems to be offline.",
+            isPresented: $showNetworkAlert
+        ) {}
     }
-        
 }
 
 struct VideoPlayerContentView_Previews: PreviewProvider {

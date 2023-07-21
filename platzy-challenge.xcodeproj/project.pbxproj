@@ -17,6 +17,7 @@
 		8A2C70032A698821004BDBF2 /* VideoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70022A698821004BDBF2 /* VideoViewModelTests.swift */; };
 		8A2C70052A698856004BDBF2 /* PexelsApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70042A698856004BDBF2 /* PexelsApiClientMock.swift */; };
 		8A2C70072A69942E004BDBF2 /* ComicsContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70062A69942E004BDBF2 /* ComicsContentViewTests.swift */; };
+		8AAD69452A6A1A4D00407568 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD69442A6A1A4D00407568 /* NetworkMonitor.swift */; };
 		8ADC9E932A67421D004F8453 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADC9E922A67421D004F8453 /* Realm */; };
 		8ADC9E952A67421D004F8453 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADC9E942A67421D004F8453 /* RealmSwift */; };
 		8ADD23302A68A4D400ECB410 /* PexelsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */; };
@@ -66,6 +67,7 @@
 		8A2C70022A698821004BDBF2 /* VideoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModelTests.swift; sourceTree = "<group>"; };
 		8A2C70042A698856004BDBF2 /* PexelsApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsApiClientMock.swift; sourceTree = "<group>"; };
 		8A2C70062A69942E004BDBF2 /* ComicsContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsContentViewTests.swift; sourceTree = "<group>"; };
+		8AAD69442A6A1A4D00407568 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsApiClient.swift; sourceTree = "<group>"; };
 		8ADD23312A68A7E000ECB410 /* ComicDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailViewModel.swift; sourceTree = "<group>"; };
 		8ADD23332A68D26900ECB410 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				8A03FCF02A664FAA00CF330A /* Constants.swift */,
+				8AAD69442A6A1A4D00407568 /* NetworkMonitor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				8ADD23382A68D8AC00ECB410 /* VideoViewModel.swift in Sources */,
 				8AFE1AAD2A6233E300527DCA /* ComicViewModelViewModel.swift in Sources */,
 				8A03FCEE2A664F8D00CF330A /* MarvelApiClient.swift in Sources */,
+				8AAD69452A6A1A4D00407568 /* NetworkMonitor.swift in Sources */,
 				8ADD23362A68D7E600ECB410 /* VideosContentView.swift in Sources */,
 				8AFE1A812A61F92D00527DCA /* platzy_challengeApp.swift in Sources */,
 				8A03FCEB2A658CEB00CF330A /* Character.swift in Sources */,

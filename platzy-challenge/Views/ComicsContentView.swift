@@ -10,6 +10,8 @@ import SwiftUI
 struct ComicsContentView: View {
 
     @StateObject var viewModel = ComicViewModel(client: MarvelApiClient())
+    @EnvironmentObject var networkMonitor: NetworkMonitor
+    @State private var showNetworkAlert = false
     @State private var hasAppeared = false
 
     var body: some View {
@@ -37,6 +39,13 @@ struct ComicsContentView: View {
             .toolbarBackground(Color.red, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
         }
+        .onChange(of: networkMonitor.isConnected) { conn in
+            showNetworkAlert = conn == false
+        }
+        .alert(
+            "Network connection seems to be offline.",
+            isPresented: $showNetworkAlert
+        ) {}
     }
 }
 

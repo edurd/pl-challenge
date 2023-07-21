@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct platzy_challengeApp: App {
+    @StateObject var networkMonitor = NetworkMonitor()
     var body: some Scene {
         WindowGroup {
             ComicsContentView()
+                .environmentObject(networkMonitor)
         }
     }
 }

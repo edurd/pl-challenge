@@ -9,6 +9,8 @@ import SwiftUI
 
 struct VideosContentView: View {
     @StateObject var viewModel = VideoViewModel(client: PexelsApiClient())
+    @EnvironmentObject var networkMonitor: NetworkMonitor
+    @State private var showNetworkAlert = false
     @State private var query: String = ""
     @State var isLoading: Bool = false
 
@@ -48,6 +50,13 @@ struct VideosContentView: View {
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(Color.red, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
+        .onChange(of: networkMonitor.isConnected) { connection in
+            showNetworkAlert = connection == false
+        }
+        .alert(
+            "Network connection seems to be offline.",
+            isPresented: $showNetworkAlert
+        ) {}
     }
 }
 

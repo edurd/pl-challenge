@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ComicDetailView: View {
     @StateObject var videoViewModel = ComicDetailViewModel()
+    @EnvironmentObject var networkMonitor: NetworkMonitor
+    @State private var showNetworkAlert = false
     var comic: Comic
     var comicImageUrl: String {
         guard let path = comic.thumbnail?.path,
@@ -49,6 +51,13 @@ struct ComicDetailView: View {
             .toolbarBackground(Color.red, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
         }
+        .onChange(of: networkMonitor.isConnected) { connection in
+            showNetworkAlert = connection == false
+        }
+        .alert(
+            "Network connection seems to be offline.",
+            isPresented: $showNetworkAlert
+        ) {}
         
     }
 }
