@@ -19,8 +19,7 @@ class VideoViewModel: ObservableObject {
     
     @MainActor
     func getVideos(withQuery text: String) async throws {
-        let textEscaped = text.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? text
-        let videosFromService = try await apiClient.getRandomVideos(withQuery: textEscaped)
+        let videosFromService = try await apiClient.getRandomVideos(withQuery: text)
         videos = videosFromService
     }
 }

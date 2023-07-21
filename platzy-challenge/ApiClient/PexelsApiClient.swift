@@ -14,7 +14,9 @@ protocol PexelsApiClientProtocol {
 class PexelsApiClient: PexelsApiClientProtocol {
     
     func getRandomVideos(withQuery text: String) async throws -> [Video] {
-        guard let url = URL(string: Constants.getRandomVideos + text) else {
+        var urlComponents = URLComponents(string: Constants.getRandomVideos)
+        urlComponents?.queryItems = [URLQueryItem(name: "query", value: text)]
+        guard let url = urlComponents?.url else {
             return []
         }
         var request = URLRequest(url: url)

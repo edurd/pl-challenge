@@ -17,7 +17,7 @@ struct VideosContentView: View {
     var body: some View {
         VStack {
             HStack{
-                TextField("Search for videos", text: $query)
+                TextField("Eg. Cats", text: $query)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button("Search") {
                     isLoading.toggle()
