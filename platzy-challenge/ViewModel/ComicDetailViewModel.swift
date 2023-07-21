@@ -9,5 +9,4 @@ import Foundation
 
 class ComicDetailViewModel: ObservableObject {
     
-//    @Published var video = 
 }

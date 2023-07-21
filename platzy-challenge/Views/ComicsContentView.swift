@@ -6,18 +6,20 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ComicsContentView: View {
 
     @StateObject var viewModel = ComicViewModel(client: MarvelApiClient())
     @EnvironmentObject var networkMonitor: NetworkMonitor
+    @ObservedResults(Comic.self) var comics
     @State private var showNetworkAlert = false
     @State private var hasAppeared = false
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.comics, id: \.id) { comic in
+                ForEach(comics, id: \.id) { comic in
                     NavigationLink(destination: ComicDetailView(comic: comic)) {
                         ComicRowView(comic: comic)
                             .onAppear {

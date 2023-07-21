@@ -22,7 +22,7 @@ struct ComicData: Decodable {
     var results: [Comic]
 }
 
-class Comic: Object, Decodable {
+class Comic: Object, Identifiable, Decodable {
     @Persisted(primaryKey: true) var id: Int
     @Persisted var title: String
     @Persisted var comicDescription: String?
