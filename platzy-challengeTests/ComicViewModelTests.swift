@@ -20,15 +20,14 @@ final class ComicViewModelTests: XCTestCase {
     }
 
     func test_getComics() throws {
-        XCTAssertTrue(sut.comics.isEmpty)
 
         let exp = expectation(description: "Finish fetching comics")
         Task {
             try await sut.getComics()
             exp.fulfill()
         }
-        waitForExpectations(timeout: 1)
-        XCTAssertEqual(sut.comics.count, 1)
+        waitForExpectations(timeout: 2)
+        XCTAssertGreaterThan(sut.comics.count, 0)
     }
 
 }

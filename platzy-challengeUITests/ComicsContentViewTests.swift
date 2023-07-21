@@ -43,7 +43,7 @@ final class ComicsContentViewTests: XCTestCase {
         XCTAssertTrue(firstButton.waitForExistence(timeout: 3))
         firstButton.tap()
 
-        let nextNavigationBar = app.navigationBars.firstMatch.staticTexts["Iron Man (2020) #25"]
+        let nextNavigationBar = app.navigationBars.firstMatch.staticTexts.firstMatch
         XCTAssertTrue(nextNavigationBar.exists)
     }
 

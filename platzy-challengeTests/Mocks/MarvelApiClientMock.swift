@@ -10,6 +10,10 @@
 class MarvelApiClientMock: MarvelApiClientProtocol {
 
     func getComics(withLimit limit: Int, offset: Int) async throws -> [Comic] {
-        return [Comic(id: 1, title: "Comic 1", description: "Description")]
+        return [Comic(id: 1,
+                      title: "Comic 1",
+                      description: "Description",
+                      thumbnail: ComicThumbnail(path: "path",
+                                                ext: "jpg"))]
     }
 }

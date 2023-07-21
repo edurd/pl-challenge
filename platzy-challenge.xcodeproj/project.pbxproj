@@ -18,6 +18,8 @@
 		8A2C70052A698856004BDBF2 /* PexelsApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70042A698856004BDBF2 /* PexelsApiClientMock.swift */; };
 		8A2C70072A69942E004BDBF2 /* ComicsContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70062A69942E004BDBF2 /* ComicsContentViewTests.swift */; };
 		8AAD69452A6A1A4D00407568 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD69442A6A1A4D00407568 /* NetworkMonitor.swift */; };
+		8AAD69482A6A546100407568 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8AAD69472A6A546100407568 /* Realm */; };
+		8AAD694A2A6A546A00407568 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8AAD69492A6A546A00407568 /* Realm */; };
 		8ADC9E932A67421D004F8453 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADC9E922A67421D004F8453 /* Realm */; };
 		8ADC9E952A67421D004F8453 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADC9E942A67421D004F8453 /* RealmSwift */; };
 		8ADD23302A68A4D400ECB410 /* PexelsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */; };
@@ -103,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAD69482A6A546100407568 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAD694A2A6A546A00407568 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +148,13 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		8AAD69462A6A546100407568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8ADC9E962A674629004F8453 /* ApiClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +171,7 @@
 				8AFE1A902A61F92F00527DCA /* platzy-challengeTests */,
 				8AFE1A9A2A61F92F00527DCA /* platzy-challengeUITests */,
 				8AFE1A7E2A61F92D00527DCA /* Products */,
+				8AAD69462A6A546100407568 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,6 +291,9 @@
 				8AFE1A8F2A61F92F00527DCA /* PBXTargetDependency */,
 			);
 			name = "platzy-challengeTests";
+			packageProductDependencies = (
+				8AAD69472A6A546100407568 /* Realm */,
+			);
 			productName = "platzy-challengeTests";
 			productReference = 8AFE1A8D2A61F92F00527DCA /* platzy-challengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -297,6 +312,9 @@
 				8AFE1A992A61F92F00527DCA /* PBXTargetDependency */,
 			);
 			name = "platzy-challengeUITests";
+			packageProductDependencies = (
+				8AAD69492A6A546A00407568 /* Realm */,
+			);
 			productName = "platzy-challengeUITests";
 			productReference = 8AFE1A972A61F92F00527DCA /* platzy-challengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -739,6 +757,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8AAD69472A6A546100407568 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8AAD69492A6A546A00407568 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
 		8ADC9E922A67421D004F8453 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
