@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A03FCEB2A658CEB00CF330A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCEA2A658CEB00CF330A /* Character.swift */; };
+		8A03FCEE2A664F8D00CF330A /* MarvelApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCED2A664F8D00CF330A /* MarvelApiClient.swift */; };
+		8A03FCF12A664FAA00CF330A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF02A664FAA00CF330A /* Constants.swift */; };
+		8A03FCF32A66516800CF330A /* ComicRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF22A66516800CF330A /* ComicRowView.swift */; };
+		8A03FCF52A66519F00CF330A /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCF42A66519F00CF330A /* Comic.swift */; };
+		8A2C6FFF2A6984D9004BDBF2 /* MarvelApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C6FFE2A6984D9004BDBF2 /* MarvelApiClientMock.swift */; };
+		8A2C70012A6987AE004BDBF2 /* ComicViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70002A6987AE004BDBF2 /* ComicViewModelTests.swift */; };
+		8A2C70032A698821004BDBF2 /* VideoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70022A698821004BDBF2 /* VideoViewModelTests.swift */; };
+		8A2C70052A698856004BDBF2 /* PexelsApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70042A698856004BDBF2 /* PexelsApiClientMock.swift */; };
+		8A2C70072A69942E004BDBF2 /* ComicsContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C70062A69942E004BDBF2 /* ComicsContentViewTests.swift */; };
+		8AAD69452A6A1A4D00407568 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD69442A6A1A4D00407568 /* NetworkMonitor.swift */; };
+		8AAD69482A6A546100407568 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8AAD69472A6A546100407568 /* Realm */; };
+		8AAD694A2A6A546A00407568 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8AAD69492A6A546A00407568 /* Realm */; };
+		8ADC9E932A67421D004F8453 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADC9E922A67421D004F8453 /* Realm */; };
+		8ADC9E952A67421D004F8453 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADC9E942A67421D004F8453 /* RealmSwift */; };
+		8ADD23302A68A4D400ECB410 /* PexelsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */; };
+		8ADD23322A68A7E000ECB410 /* ComicDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23312A68A7E000ECB410 /* ComicDetailViewModel.swift */; };
+		8ADD23342A68D26900ECB410 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23332A68D26900ECB410 /* Video.swift */; };
+		8ADD23362A68D7E600ECB410 /* VideosContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23352A68D7E500ECB410 /* VideosContentView.swift */; };
+		8ADD23382A68D8AC00ECB410 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23372A68D8AC00ECB410 /* VideoViewModel.swift */; };
+		8ADD233A2A68D9F400ECB410 /* VideoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD23392A68D9F400ECB410 /* VideoRowView.swift */; };
+		8ADD233C2A68E23000ECB410 /* VideoPlayerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD233B2A68E22F00ECB410 /* VideoPlayerContentView.swift */; };
+		8AFE1A812A61F92D00527DCA /* platzi_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A802A61F92D00527DCA /* platzi_challengeApp.swift */; };
+		8AFE1A832A61F92D00527DCA /* ComicsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A822A61F92D00527DCA /* ComicsContentView.swift */; };
+		8AFE1A852A61F92F00527DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFE1A842A61F92F00527DCA /* Assets.xcassets */; };
+		8AFE1A882A61F92F00527DCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFE1A872A61F92F00527DCA /* Preview Assets.xcassets */; };
+		8AFE1A922A61F92F00527DCA /* platzi_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A912A61F92F00527DCA /* platzi_challengeTests.swift */; };
+		8AFE1A9C2A61F92F00527DCA /* platzi_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A9B2A61F92F00527DCA /* platzi_challengeUITests.swift */; };
+		8AFE1A9E2A61F92F00527DCA /* platzi_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1A9D2A61F92F00527DCA /* platzi_challengeUITestsLaunchTests.swift */; };
+		8AFE1AAD2A6233E300527DCA /* ComicViewModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE1AAC2A6233E300527DCA /* ComicViewModelViewModel.swift */; };
+		8AFF5CCA2A67AAA1006E3419 /* ComicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF5CC92A67AAA1006E3419 /* ComicDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AFE1A8E2A61F92F00527DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AFE1A752A61F92D00527DCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AFE1A7C2A61F92D00527DCA;
+			remoteInfo = "platzi-challenge";
+		};
+		8AFE1A982A61F92F00527DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AFE1A752A61F92D00527DCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AFE1A7C2A61F92D00527DCA;
+			remoteInfo = "platzi-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A03FCEA2A658CEB00CF330A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		8A03FCED2A664F8D00CF330A /* MarvelApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelApiClient.swift; sourceTree = "<group>"; };
+		8A03FCF02A664FAA00CF330A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A03FCF22A66516800CF330A /* ComicRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRowView.swift; sourceTree = "<group>"; };
+		8A03FCF42A66519F00CF330A /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		8A03FCF62A66614200CF330A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8A2C6FFE2A6984D9004BDBF2 /* MarvelApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelApiClientMock.swift; sourceTree = "<group>"; };
+		8A2C70002A6987AE004BDBF2 /* ComicViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewModelTests.swift; sourceTree = "<group>"; };
+		8A2C70022A698821004BDBF2 /* VideoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModelTests.swift; sourceTree = "<group>"; };
+		8A2C70042A698856004BDBF2 /* PexelsApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsApiClientMock.swift; sourceTree = "<group>"; };
+		8A2C70062A69942E004BDBF2 /* ComicsContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsContentViewTests.swift; sourceTree = "<group>"; };
+		8AAD69442A6A1A4D00407568 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsApiClient.swift; sourceTree = "<group>"; };
+		8ADD23312A68A7E000ECB410 /* ComicDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailViewModel.swift; sourceTree = "<group>"; };
+		8ADD23332A68D26900ECB410 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		8ADD23352A68D7E500ECB410 /* VideosContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosContentView.swift; sourceTree = "<group>"; };
+		8ADD23372A68D8AC00ECB410 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		8ADD23392A68D9F400ECB410 /* VideoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRowView.swift; sourceTree = "<group>"; };
+		8ADD233B2A68E22F00ECB410 /* VideoPlayerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerContentView.swift; sourceTree = "<group>"; };
+		8AFE1A7D2A61F92D00527DCA /* platzi-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "platzi-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFE1A802A61F92D00527DCA /* platzi_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzi_challengeApp.swift; sourceTree = "<group>"; };
+		8AFE1A822A61F92D00527DCA /* ComicsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsContentView.swift; sourceTree = "<group>"; };
+		8AFE1A842A61F92F00527DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AFE1A872A61F92F00527DCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8AFE1A8D2A61F92F00527DCA /* platzi-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "platzi-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFE1A912A61F92F00527DCA /* platzi_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzi_challengeTests.swift; sourceTree = "<group>"; };
+		8AFE1A972A61F92F00527DCA /* platzi-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "platzi-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFE1A9B2A61F92F00527DCA /* platzi_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzi_challengeUITests.swift; sourceTree = "<group>"; };
+		8AFE1A9D2A61F92F00527DCA /* platzi_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platzi_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AFE1AAC2A6233E300527DCA /* ComicViewModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewModelViewModel.swift; sourceTree = "<group>"; };
+		8AFF5CC92A67AAA1006E3419 /* ComicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AFE1A7A2A61F92D00527DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ADC9E952A67421D004F8453 /* RealmSwift in Frameworks */,
+				8ADC9E932A67421D004F8453 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFE1A8A2A61F92F00527DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AAD69482A6A546100407568 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFE1A942A61F92F00527DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AAD694A2A6A546A00407568 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A03FCEC2A664BEF00CF330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCEA2A658CEB00CF330A /* Character.swift */,
+				8A03FCF42A66519F00CF330A /* Comic.swift */,
+				8ADD23332A68D26900ECB410 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A03FCEF2A664F9F00CF330A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCF02A664FAA00CF330A /* Constants.swift */,
+				8AAD69442A6A1A4D00407568 /* NetworkMonitor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8A2C6FFD2A6984BD004BDBF2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8A2C6FFE2A6984D9004BDBF2 /* MarvelApiClientMock.swift */,
+				8A2C70042A698856004BDBF2 /* PexelsApiClientMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8AAD69462A6A546100407568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ADC9E962A674629004F8453 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCED2A664F8D00CF330A /* MarvelApiClient.swift */,
+				8ADD232F2A68A4D400ECB410 /* PexelsApiClient.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		8AFE1A742A61F92D00527DCA = {
+			isa = PBXGroup;
+			children = (
+				8AFE1A7F2A61F92D00527DCA /* platzi-challenge */,
+				8AFE1A902A61F92F00527DCA /* platzi-challengeTests */,
+				8AFE1A9A2A61F92F00527DCA /* platzi-challengeUITests */,
+				8AFE1A7E2A61F92D00527DCA /* Products */,
+				8AAD69462A6A546100407568 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8AFE1A7E2A61F92D00527DCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AFE1A7D2A61F92D00527DCA /* platzi-challenge.app */,
+				8AFE1A8D2A61F92F00527DCA /* platzi-challengeTests.xctest */,
+				8AFE1A972A61F92F00527DCA /* platzi-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AFE1A7F2A61F92D00527DCA /* platzi-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCF62A66614200CF330A /* Info.plist */,
+				8ADC9E962A674629004F8453 /* ApiClient */,
+				8A03FCEF2A664F9F00CF330A /* Utils */,
+				8A03FCEC2A664BEF00CF330A /* Model */,
+				8AFE1AAB2A6233D500527DCA /* ViewModel */,
+				8AFE1AAA2A62271E00527DCA /* Views */,
+				8AFE1A802A61F92D00527DCA /* platzi_challengeApp.swift */,
+				8AFE1A842A61F92F00527DCA /* Assets.xcassets */,
+				8AFE1A862A61F92F00527DCA /* Preview Content */,
+			);
+			path = "platzi-challenge";
+			sourceTree = "<group>";
+		};
+		8AFE1A862A61F92F00527DCA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8AFE1A872A61F92F00527DCA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8AFE1A902A61F92F00527DCA /* platzi-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A2C6FFD2A6984BD004BDBF2 /* Mocks */,
+				8AFE1A912A61F92F00527DCA /* platzi_challengeTests.swift */,
+				8A2C70002A6987AE004BDBF2 /* ComicViewModelTests.swift */,
+				8A2C70022A698821004BDBF2 /* VideoViewModelTests.swift */,
+			);
+			path = "platzi-challengeTests";
+			sourceTree = "<group>";
+		};
+		8AFE1A9A2A61F92F00527DCA /* platzi-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8AFE1A9B2A61F92F00527DCA /* platzi_challengeUITests.swift */,
+				8AFE1A9D2A61F92F00527DCA /* platzi_challengeUITestsLaunchTests.swift */,
+				8A2C70062A69942E004BDBF2 /* ComicsContentViewTests.swift */,
+			);
+			path = "platzi-challengeUITests";
+			sourceTree = "<group>";
+		};
+		8AFE1AAA2A62271E00527DCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AFE1A822A61F92D00527DCA /* ComicsContentView.swift */,
+				8A03FCF22A66516800CF330A /* ComicRowView.swift */,
+				8AFF5CC92A67AAA1006E3419 /* ComicDetailView.swift */,
+				8ADD23352A68D7E500ECB410 /* VideosContentView.swift */,
+				8ADD23392A68D9F400ECB410 /* VideoRowView.swift */,
+				8ADD233B2A68E22F00ECB410 /* VideoPlayerContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AFE1AAB2A6233D500527DCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8AFE1AAC2A6233E300527DCA /* ComicViewModelViewModel.swift */,
+				8ADD23312A68A7E000ECB410 /* ComicDetailViewModel.swift */,
+				8ADD23372A68D8AC00ECB410 /* VideoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AFE1A7C2A61F92D00527DCA /* platzi-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFE1AA12A61F92F00527DCA /* Build configuration list for PBXNativeTarget "platzi-challenge" */;
+			buildPhases = (
+				8AFE1A792A61F92D00527DCA /* Sources */,
+				8AFE1A7A2A61F92D00527DCA /* Frameworks */,
+				8AFE1A7B2A61F92D00527DCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "platzi-challenge";
+			packageProductDependencies = (
+				8ADC9E922A67421D004F8453 /* Realm */,
+				8ADC9E942A67421D004F8453 /* RealmSwift */,
+			);
+			productName = "platzi-challenge";
+			productReference = 8AFE1A7D2A61F92D00527DCA /* platzi-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AFE1A8C2A61F92F00527DCA /* platzi-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFE1AA42A61F92F00527DCA /* Build configuration list for PBXNativeTarget "platzi-challengeTests" */;
+			buildPhases = (
+				8AFE1A892A61F92F00527DCA /* Sources */,
+				8AFE1A8A2A61F92F00527DCA /* Frameworks */,
+				8AFE1A8B2A61F92F00527DCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AFE1A8F2A61F92F00527DCA /* PBXTargetDependency */,
+			);
+			name = "platzi-challengeTests";
+			packageProductDependencies = (
+				8AAD69472A6A546100407568 /* Realm */,
+			);
+			productName = "platzi-challengeTests";
+			productReference = 8AFE1A8D2A61F92F00527DCA /* platzi-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AFE1A962A61F92F00527DCA /* platzi-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFE1AA72A61F92F00527DCA /* Build configuration list for PBXNativeTarget "platzi-challengeUITests" */;
+			buildPhases = (
+				8AFE1A932A61F92F00527DCA /* Sources */,
+				8AFE1A942A61F92F00527DCA /* Frameworks */,
+				8AFE1A952A61F92F00527DCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AFE1A992A61F92F00527DCA /* PBXTargetDependency */,
+			);
+			name = "platzi-challengeUITests";
+			packageProductDependencies = (
+				8AAD69492A6A546A00407568 /* Realm */,
+			);
+			productName = "platzi-challengeUITests";
+			productReference = 8AFE1A972A61F92F00527DCA /* platzi-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AFE1A752A61F92D00527DCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8AFE1A7C2A61F92D00527DCA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					8AFE1A8C2A61F92F00527DCA = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8AFE1A7C2A61F92D00527DCA;
+					};
+					8AFE1A962A61F92F00527DCA = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8AFE1A7C2A61F92D00527DCA;
+					};
+				};
+			};
+			buildConfigurationList = 8AFE1A782A61F92D00527DCA /* Build configuration list for PBXProject "platzi-challenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AFE1A742A61F92D00527DCA;
+			packageReferences = (
+				8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 8AFE1A7E2A61F92D00527DCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AFE1A7C2A61F92D00527DCA /* platzi-challenge */,
+				8AFE1A8C2A61F92F00527DCA /* platzi-challengeTests */,
+				8AFE1A962A61F92F00527DCA /* platzi-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AFE1A7B2A61F92D00527DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFE1A882A61F92F00527DCA /* Preview Assets.xcassets in Resources */,
+				8AFE1A852A61F92F00527DCA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFE1A8B2A61F92F00527DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFE1A952A61F92F00527DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AFE1A792A61F92D00527DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFE1A832A61F92D00527DCA /* ComicsContentView.swift in Sources */,
+				8ADD233C2A68E23000ECB410 /* VideoPlayerContentView.swift in Sources */,
+				8ADD23342A68D26900ECB410 /* Video.swift in Sources */,
+				8A03FCF52A66519F00CF330A /* Comic.swift in Sources */,
+				8A03FCF12A664FAA00CF330A /* Constants.swift in Sources */,
+				8ADD23382A68D8AC00ECB410 /* VideoViewModel.swift in Sources */,
+				8AFE1AAD2A6233E300527DCA /* ComicViewModelViewModel.swift in Sources */,
+				8A03FCEE2A664F8D00CF330A /* MarvelApiClient.swift in Sources */,
+				8AAD69452A6A1A4D00407568 /* NetworkMonitor.swift in Sources */,
+				8ADD23362A68D7E600ECB410 /* VideosContentView.swift in Sources */,
+				8AFE1A812A61F92D00527DCA /* platzi_challengeApp.swift in Sources */,
+				8A03FCEB2A658CEB00CF330A /* Character.swift in Sources */,
+				8A03FCF32A66516800CF330A /* ComicRowView.swift in Sources */,
+				8ADD233A2A68D9F400ECB410 /* VideoRowView.swift in Sources */,
+				8ADD23302A68A4D400ECB410 /* PexelsApiClient.swift in Sources */,
+				8ADD23322A68A7E000ECB410 /* ComicDetailViewModel.swift in Sources */,
+				8AFF5CCA2A67AAA1006E3419 /* ComicDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFE1A892A61F92F00527DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2C6FFF2A6984D9004BDBF2 /* MarvelApiClientMock.swift in Sources */,
+				8AFE1A922A61F92F00527DCA /* platzi_challengeTests.swift in Sources */,
+				8A2C70032A698821004BDBF2 /* VideoViewModelTests.swift in Sources */,
+				8A2C70012A6987AE004BDBF2 /* ComicViewModelTests.swift in Sources */,
+				8A2C70052A698856004BDBF2 /* PexelsApiClientMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFE1A932A61F92F00527DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFE1A9E2A61F92F00527DCA /* platzi_challengeUITestsLaunchTests.swift in Sources */,
+				8A2C70072A69942E004BDBF2 /* ComicsContentViewTests.swift in Sources */,
+				8AFE1A9C2A61F92F00527DCA /* platzi_challengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AFE1A8F2A61F92F00527DCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AFE1A7C2A61F92D00527DCA /* platzi-challenge */;
+			targetProxy = 8AFE1A8E2A61F92F00527DCA /* PBXContainerItemProxy */;
+		};
+		8AFE1A992A61F92F00527DCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AFE1A7C2A61F92D00527DCA /* platzi-challenge */;
+			targetProxy = 8AFE1A982A61F92F00527DCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8AFE1A9F2A61F92F00527DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AFE1AA02A61F92F00527DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AFE1AA22A61F92F00527DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"platzi-challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = W6QLPMZAJG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "platzi-challenge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eduh.platzi-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AFE1AA32A61F92F00527DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"platzi-challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = W6QLPMZAJG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "platzi-challenge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eduh.platzi-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8AFE1AA52A61F92F00527DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6QLPMZAJG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eduh.platzi-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/platzi-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/platzi-challenge";
+			};
+			name = Debug;
+		};
+		8AFE1AA62A61F92F00527DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6QLPMZAJG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eduh.platzi-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/platzi-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/platzi-challenge";
+			};
+			name = Release;
+		};
+		8AFE1AA82A61F92F00527DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6QLPMZAJG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eduh.platzi-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "platzi-challenge";
+			};
+			name = Debug;
+		};
+		8AFE1AA92A61F92F00527DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W6QLPMZAJG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eduh.platzi-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "platzi-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AFE1A782A61F92D00527DCA /* Build configuration list for PBXProject "platzi-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFE1A9F2A61F92F00527DCA /* Debug */,
+				8AFE1AA02A61F92F00527DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFE1AA12A61F92F00527DCA /* Build configuration list for PBXNativeTarget "platzi-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFE1AA22A61F92F00527DCA /* Debug */,
+				8AFE1AA32A61F92F00527DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFE1AA42A61F92F00527DCA /* Build configuration list for PBXNativeTarget "platzi-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFE1AA52A61F92F00527DCA /* Debug */,
+				8AFE1AA62A61F92F00527DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFE1AA72A61F92F00527DCA /* Build configuration list for PBXNativeTarget "platzi-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFE1AA82A61F92F00527DCA /* Debug */,
+				8AFE1AA92A61F92F00527DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.41.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AAD69472A6A546100407568 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8AAD69492A6A546A00407568 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8ADC9E922A67421D004F8453 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8ADC9E942A67421D004F8453 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ADC9E912A67421D004F8453 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8AFE1A752A61F92D00527DCA /* Project object */;
+}
