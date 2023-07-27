@@ -39,5 +39,6 @@ struct VideoPlayerContentView: View {
 struct VideoPlayerContentView_Previews: PreviewProvider {
     static var previews: some View {
         VideoPlayerContentView(link: "https://player.vimeo.com/external/368064896.sd.mp4?s=62ea7eba7cbffc3d0d10da8630b3635585979411&profile_id=139&oauth2_token_id=57447761")
+            .environmentObject(NetworkMonitor())
     }
 }

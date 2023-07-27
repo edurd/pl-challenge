@@ -54,5 +54,6 @@ struct ComicsContentView: View {
 struct ComicsContentView_Previews: PreviewProvider {
     static var previews: some View {
         ComicsContentView()
+            .environmentObject(NetworkMonitor())
     }
 }

@@ -63,5 +63,6 @@ struct VideosContentView: View {
 struct VideosContentView_Previews: PreviewProvider {
     static var previews: some View {
         VideosContentView()
+            .environmentObject(NetworkMonitor())
     }
 }
