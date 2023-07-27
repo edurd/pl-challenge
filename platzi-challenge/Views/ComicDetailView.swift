@@ -69,5 +69,6 @@ struct ComicDetailView_Previews: PreviewProvider {
                                      description: "Long description",
                                      thumbnail: ComicThumbnail(path:"http://i.annihil.us/u/prod/marvel/i/mg/9/40/64a57ab5229cd",
                                                                ext: "jpg")))
+        .environmentObject(NetworkMonitor())
     }
 }
